@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#718d7b">
+  <title>Masuk | RS Sehat Sentosa</title>
+  <link rel="stylesheet" href="css/login.css">
+  <script src="script/session.js" defer></script>
+  <script src="script/login.js" defer></script>
+</head>
+<body>
+  <main class="login-page">
+    <section class="welcome-panel" aria-label="Informasi rumah sakit">
+      <div class="hero-photo" aria-hidden="true"></div>
+      <div class="hero-overlay"></div>
+
+      <a class="brand" href="login.html" aria-label="RS Sehat Sentosa">
+        <span class="brand-mark" aria-hidden="true">
+          <span class="brand-mark-horizontal"></span>
+          <span class="brand-mark-vertical"></span>
+        </span>
+        <span class="brand-copy">
+          <strong>RS Sehat Sentosa</strong>
+          <span>Melayani dengan Hati</span>
+        </span>
+      </a>
+
+      <div class="welcome-copy">
+        <p class="eyebrow">SELAMAT DATANG</p>
+        <h1>Pelayanan Kesehatan <span>Lebih Dekat</span></h1>
+        <p class="welcome-description">
+          Sistem antrian rumah sakit untuk pengalaman pelayanan yang lebih
+          nyaman, cepat, dan terorganisir.
+        </p>
+        <span class="accent-line" aria-hidden="true"></span>
+        <div class="welcome-note">
+          <span class="note-dot" aria-hidden="true"></span>
+          <span>Pelayanan yang lebih nyaman dimulai dari sini.</span>
+        </div>
+      </div>
+
+      <p class="photo-credit">RS Sehat Sentosa · Pelayanan dengan hati</p>
+    </section>
+
+    <section class="form-panel" aria-label="Form masuk">
+      <div class="decorative-dots" aria-hidden="true">
+        <span class="dot dot-active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <div class="login-card">
+        <div class="mobile-brand">
+          <span class="brand-mark" aria-hidden="true">
+            <span class="brand-mark-horizontal"></span>
+            <span class="brand-mark-vertical"></span>
+          </span>
+          <span class="brand-copy">
+            <strong>RS Sehat Sentosa</strong>
+            <span>Melayani dengan Hati</span>
+          </span>
+        </div>
+
+        <header class="form-heading">
+          <p class="eyebrow">PORTAL LAYANAN</p>
+          <h2>Masuk ke <span>Sistem</span></h2>
+          <p>Silakan login untuk mengakses Dashboard Admin dan Panel Operator.</p>
+        </header>
+
+        <form id="login-form" novalidate>
+          <div class="form-field">
+            <label for="username">Username</label>
+            <div class="input-wrap">
+              <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="8" r="4"></circle>
+                <path d="M4.5 20c.6-4 3.1-6 7.5-6s6.9 2 7.5 6"></path>
+              </svg>
+              <input
+                id="username"
+                name="username"
+                type="text"
+                placeholder="Masukkan username"
+                autocomplete="username"
+                required
+              >
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="password">Password</label>
+            <div class="input-wrap">
+              <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="5" y="10" width="14" height="10" rx="2"></rect>
+                <path d="M8 10V7a4 4 0 0 1 8 0v3"></path>
+                <path d="M12 14v2"></path>
+              </svg>
+              <input
+                id="password"
+                name="password"
+                type="password"
+                placeholder="Masukkan password"
+                autocomplete="current-password"
+                required
+              >
+              <button class="password-toggle" id="toggle-password" type="button"
+                aria-label="Tampilkan password" aria-pressed="false">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M2.5 12s3.3-6 9.5-6 9.5 6 9.5 6-3.3 6-9.5 6-9.5-6-9.5-6Z"></path>
+                  <circle cx="12" cy="12" r="2.5"></circle>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="form-options">
+            <label class="remember-option" for="remember-me">
+              <input id="remember-me" type="checkbox" name="remember-me">
+              <span class="custom-checkbox" aria-hidden="true"></span>
+              <span>Ingat saya</span>
+            </label>
+            <button class="forgot-link" id="forgot-password" type="button">Lupa password?</button>
+          </div>
+
+          <p id="login-message" class="login-message" role="alert" aria-live="polite"></p>
+
+          <button id="login-button" class="submit-button" type="submit">
+            <span class="button-label">Masuk</span>
+            <svg class="button-arrow" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 12h15M13 5l7 7-7 7"></path>
+            </svg>
+            <span class="button-spinner" aria-hidden="true"></span>
+          </button>
+        </form>
+
+        <div class="divider"><span></span><p>atau</p><span></span></div>
+
+        <aside class="demo-hint">
+          <span class="info-icon" aria-hidden="true">i</span>
+          <div class="demo-hint-body">
+            <p>
+              Gunakan akun uji dari
+              <a href="https://dummyjson.com/users" target="_blank" rel="noreferrer">dummyjson.com/users</a>
+              (contoh: username/password tercantum di sana).
+            </p>
+            <div id="test-accounts" class="test-accounts" aria-label="Akun uji, klik untuk mengisi form" hidden></div>
+          </div>
+        </aside>
+
+        <p class="form-footer">© 2026 RS Sehat Sentosa · Sistem Antrian</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
